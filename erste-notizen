@@ -8,12 +8,27 @@ Java notizen
     
 -source path geht zu den quelldateien oder source code in englisch
 
+-java archiver  baut java archive.
+
 -classpath führt zu den .class datein. zb main-methode (speichert classen, oder kategorien und deren bezeichnungen) ( .class-claspath bin;C:\lib)
 
--compiler baut aus java code bit code oder einzen und nullen? (jarvac -d bin beispiel.java)
+-compiler baut aus java source code class dateien(jarvac -d bin beispiel.java)
+
+- interpreter macht die class dateien ausfürbar. 
 
 -leider unterscheide Java in gross und klein schreibung. ich mache das ja ungerne.
 
+// dieser text dient kommentaren er wird nicht im programm bearbeitet. nur im quellcode angezeigt. das ist gut um code zu kommentieren;
+
+/* kommentar*/ funtioniert auch. das ist gut für kommentare die länger als eine zeile sind.
+
+das semicolon ; beended ein argument oder die kommentar zeile.
+
+System.out.println("hallo");  ist java code der "hallo" anzeigt. das System.out.print steht für "print to screen" oder anzeigen 
+
+das  ln steht für "line" oder zeile. 
+
+System.out.print("____"); geht auch. es hatt dann keinen zeilen umbruch 
 
 
 
