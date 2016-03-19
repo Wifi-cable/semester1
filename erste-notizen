@@ -1,0 +1,19 @@
+Java notizen 
+
+    die Basics. 
+    
+-ein java file besteht aus einem odner mit verschiedenen datein/files. dem quellcode oder source code ansich, einer oder mehereren class datei (und warscheinlich noch mehr)
+    
+-alles kann "verpackt" werden. damit man keine 30 dateien/files mehr hat und das ganze besser verschicken oder verwenden kann. zum bearbeiten ist es aber besser wenn es einzelne datein oder files sind. (jar -cfe beispiel.jar)
+    
+-source path geht zu den quelldateien oder source code in englisch
+
+-classpath führt zu den .class datein. zb main-methode (speichert classen, oder kategorien und deren bezeichnungen) ( .class-claspath bin;C:\lib)
+
+-compiler baut aus java code bit code oder einzen und nullen? (jarvac -d bin beispiel.java)
+
+-leider unterscheide Java in gross und klein schreibung. ich mache das ja ungerne.
+
+
+
+
