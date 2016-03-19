@@ -12,7 +12,7 @@ Java notizen
 
 -classpath führt zu den .class datein. zb main-methode (speichert classen, oder kategorien und deren bezeichnungen) ( .class-claspath bin;C:\lib)
 
--compiler baut aus java source code class dateien(jarvac -d bin beispiel.java)
+-compiler baut aus java source code class dateien die dann in bite code sind? und geziped also kompremiert(jarvac -d bin beispiel.java)
 
 - interpreter macht die class dateien ausfürbar. 
 
@@ -30,5 +30,7 @@ das  ln steht für "line" oder zeile.
 
 System.out.print("____"); geht auch. es hatt dann keinen zeilen umbruch 
 
+arags[0] erster eingabewert. (etwas das man als imput eingeben kann und mit dem java dann arbeitet) es wird bei 0 angefangen zu zälen. ist komisch, machen andere programiersprachen aber auch so. 
 
+Jar ist eine archiv datei
 
