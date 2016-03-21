@@ -1,0 +1,27 @@
+notizen über Eclipse
+
+-setup methode ruft einige dinge beim programmstart (quellcode) auf. die müssen dann nicht andauernt wieder aufgerufen werden.
+
+-draw methode scheint für animationen oder grafik gut zu sein die ecke oben links ist 0/0
+
+    -square mode
+    -elypse mode 
+-farbmodus man kann formen füllen, die farben sind mit nummern versehen. 0 ist schwarz 255 ist weiss.nofill ist transparent
+
+-stroke die linie um eine form drumrum. mann kann farbe und breite der linie deffinieren.
+
+-frame rate standart is 60 pro sekunde, das schafft aber nicht jeder computer. man kann sie runter drehen
+
+-redraw() bei gestoppter animation ein mal aufrufen
+
+-loop() animation wieder starten
+
+-noloop() animation ein mal spielen und dann stoppen
+
+-interaction mit dem spieler/benutzer nur in (PApplet) class.
+
+    -moseClicked() reaktion wenn geckickt wurde
+    -mosueMoved() oder  mouseDragged() reagirt auf maus
+    -keyPressed  oder KeyReleased
+
+
