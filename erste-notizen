@@ -34,3 +34,25 @@ arags[0] erster eingabewert. (etwas das man als imput eingeben kann und mit dem 
 
 Jar ist eine archiv datei
 
+-variablen (im mathe ist das oft X als platzhalter für eine zahl) es gibt verschiedene datentypen von variablen. zb strings (buchstabenketten) und sie brauchen einen namen damit man sie unterscheiden und geplahnt aufrufen kann. man kann darin sozusagen daten speichern.
+    class HalloWelt {
+    public static void main(strings[] args){
+        String satz = "hallo welt!";
+        System.out.println(satz);
+        }
+    }
+hier gibt es die variable "satz" die oben als strung deffiniert wurde.  das istgleich zeichen macht benennt die variable.  die gänsefüsschen grenzen sie wieder ein. bei dem print statement sieht man das die variable aufgerufen wird und das sie nicht ausgetippt werden muss.(praktisch wenn man etwas öfter braucht.
+
+-strings können auch verknüpft werden mit einem +.  also z.b. ("string1 "+"string2 ");  wichtig an die leerzeichen denken. sontzt hat man ein mega bandwurm-wort.
+
+variablen typen
+    -boolean (bolean hungrig  also true/false)
+    -int integer oder ganze zahl (positiv und negativ)
+    -double zahlen mit comma mit punkt statt komma weil amerik. schreibeweise
+    -char (character) buchstabe oder zeichen (mit einem 'x') begrenzen
+    -string zeichenkette wörte etc.
+    
+bei zahlen die man dividieren will ist es wichtig eine null dahinter zu stellen. also statt 2 eine 2.0 und das als double zu deklarieren.
+
+int x *=3; bedeutet die zahl die in variable x gespeichert ist mal drei
+int y++; bedeutet die zahl in variable y plus 1. gut zum hochzälen.
