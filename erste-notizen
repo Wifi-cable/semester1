@@ -52,6 +52,15 @@ variablen typen
     -char (character) buchstabe oder zeichen (mit einem 'x') begrenzen
     -string zeichenkette wörte etc.
     
+    public class HalloWelt {
+    public static void main(String[] args) {
+        String Hi = "Willkommen";
+        System.out.println(Hi);
+    }
+}
+
+wichtig, String und System out gross schreiben. beides zwischen die geschwungenen klammern. befor die varable fest gelegt wird java sagen was für ein varibablen typ. in dem fall String.
+    
 bei zahlen die man dividieren will ist es wichtig eine null dahinter zu stellen. also statt 2 eine 2.0 und das als double zu deklarieren.
 
 int x *=3; bedeutet die zahl die in variable x gespeichert ist mal drei
