@@ -1,0 +1,9 @@
+class Weitsprung {
+    public static void main(String[] args) {
+        // Ergaenze den richtigen Datentyp
+       String name = "Tom";
+        int alter = 13;
+        double weite = 3.5;
+        System.out.println(name + ", " + alter + " Jahre alt, ist " + weite + "m gesprungen.");
+    }
+}
