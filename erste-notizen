@@ -50,7 +50,7 @@ variablen typen
     -int integer oder ganze zahl (positiv und negativ)
     -double zahlen mit comma mit punkt statt komma weil amerik. schreibeweise
     -char (character) buchstabe oder zeichen (mit einem 'x') begrenzen
-    -string zeichenkette wörte etc.
+    -String zeichenkette wörte etc.
     
     public class HalloWelt {
     public static void main(String[] args) {
@@ -64,4 +64,16 @@ wichtig, String und System out gross schreiben. beides zwischen die geschwungene
 bei zahlen die man dividieren will ist es wichtig eine null dahinter zu stellen. also statt 2 eine 2.0 und das als double zu deklarieren.
 
 int x *=3; bedeutet die zahl die in variable x gespeichert ist mal drei
+
 int y++; bedeutet die zahl in variable y plus 1. gut zum hochzälen.
+
+short ist änlich wie integer (int) bedeutet 16 bit zahlen hexadecimal um das dazustellen muss eine 0x vor die zahl gestellt werden.(für oct muss eine 0 vor die zahl)
+
+long ist auch ähnlich wie ingeger(int) für 64 bit zahlen. braucht aber mehr speicher platz.
+
+double für komma zahlen ist der genauste datentyp. braucht aber viel mehr speicherplatz als float
+
+float ist auch ein daten typ für zahlen. nur 4 bit, also nicht so genau wie double, muss als socher deklariert werden und braucht ein F dahinter. zb  
+float a = 1.00f; 
+
+
