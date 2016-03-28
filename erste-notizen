@@ -34,7 +34,12 @@ arags[0] erster eingabewert. (etwas das man als imput eingeben kann und mit dem 
 
 Jar ist eine archiv datei
 
--variablen (im mathe ist das oft X als platzhalter für eine zahl) es gibt verschiedene datentypen von variablen. zb strings (buchstabenketten) und sie brauchen einen namen damit man sie unterscheiden und geplahnt aufrufen kann. man kann darin sozusagen daten speichern.
+-variablen 
+      (im mathe ist das oft X als platzhalter für eine zahl) es gibt
+        verschiedene datentypen von variablen. zb strings (buchstabenketten)
+        und sie brauchen einen namen damit man sie unterscheiden und geplahnt
+        aufrufen kann. man kann darin sozusagen daten speichern.
+        
     class HalloWelt {
     public static void main(strings[] args){
         String satz = "hallo welt!";
@@ -43,7 +48,10 @@ Jar ist eine archiv datei
     }
 hier gibt es die variable "satz" die oben als strung deffiniert wurde.  das istgleich zeichen macht benennt die variable.  die gänsefüsschen grenzen sie wieder ein. bei dem print statement sieht man das die variable aufgerufen wird und das sie nicht ausgetippt werden muss.(praktisch wenn man etwas öfter braucht.
 
--strings können auch verknüpft werden mit einem +.  also z.b. ("string1 "+"string2 ");  wichtig an die leerzeichen denken. sontzt hat man ein mega bandwurm-wort.
+-strings
+       können auch verknüpft werden mit einem +.  also z.b.
+       ("string1"+"string2");  wichtig an die leerzeichen denken. sontzt hat
+       man ein mega bandwurm-wort.
 
 variablen typen
     -boolean (bolean hungrig  also true/false)
@@ -67,13 +75,37 @@ int x *=3; bedeutet die zahl die in variable x gespeichert ist mal drei
 
 int y++; bedeutet die zahl in variable y plus 1. gut zum hochzälen.
 
-short ist änlich wie integer (int) bedeutet 16 bit zahlen hexadecimal um das dazustellen muss eine 0x vor die zahl gestellt werden.(für oct muss eine 0 vor die zahl)
+short
+        ist änlich wie integer (int) bedeutet 16 bit zahlen hexadecimal um das
+        dazustellen muss eine 0x vor die zahl gestellt werden.(für oct muss
+        eine    0 vor die zahl)
 
-long ist auch ähnlich wie ingeger(int) für 64 bit zahlen. braucht aber mehr speicher platz.
+long 
+     ist auch ähnlich wie ingeger(int) für 64 bit zahlen. braucht aber mehr
+     speicher platz.
 
-double für komma zahlen ist der genauste datentyp. braucht aber viel mehr speicherplatz als float
+double 
+    für komma zahlen ist der genauste datentyp. braucht aber viel mehr
+    speicherplatz als float
 
-float ist auch ein daten typ für zahlen. nur 4 bit, also nicht so genau wie double, muss als socher deklariert werden und braucht ein F dahinter. zb  
-float a = 1.00f; 
+float 
+    ist auch ein daten typ für zahlen. nur 4 bit, also nicht so genau wie
+    double, muss als socher deklariert werden und braucht ein F dahinter. zb  
+    float a = 1.00f; 
 
+object
+    
 
+class.
+     etwas das dinge im code zusammenfasst das in der realen welt zusammen
+     gehört. sie können frei deffiniert werden wie in CSS. zb "papagei" oder
+     "menue leiste". es deffiniert das verhalten eines "objects"
+
+mehtode
+     das verhalten oder die dinge die eine classe tuhen sollte. (wenn bug frei)
+     zb das "sagt hallo" in der class "papagei" ist eine methode. void steht
+     davor, dann wie die methode heist. verschiedene programm teile können auf
+     die vorher deffienierten methoden zugreifen. (man muss sie nicht dauernt
+     neu tippen oder copieren und einfügen) beispiel: void sagHallo (){...}  am
+     besten eine neue zeile nehmen und einrücken für das was die methode machen
+     soll. 
