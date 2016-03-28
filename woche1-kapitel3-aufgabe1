@@ -1,0 +1,10 @@
+woche1 kapitel3 aufgabe1
+
+public class Zoo {
+    public static void main(String[] args){
+        Papagei alex = new Papagei();
+        alex.sagHallo();
+        Papagei arthur = new Papagei();
+        alex.sagHallo();
+    }
+}

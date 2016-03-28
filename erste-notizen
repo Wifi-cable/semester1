@@ -94,12 +94,17 @@ float
     float a = 1.00f; 
 
 object
-    
+    sind in classes drinn. mehere objecte können in der selben class sein. zb
+    der papagei "alex" ist ein object der klasse papagei. um einen zweiten
+    papagei zu bekommen schreibt man ohne anfürhugsteichen "papagei alex
+    = new Papagei();" objecte können mehtoden aufrufen, oder verhalten (code
+    schnipsel namens methode benutzen wenn es in der selben class ist)
 
 class.
      etwas das dinge im code zusammenfasst das in der realen welt zusammen
      gehört. sie können frei deffiniert werden wie in CSS. zb "papagei" oder
-     "menue leiste". es deffiniert das verhalten eines "objects"
+     "menue leiste". eine class kann viele "objects" endhalten wie eine
+     art container, oder eine box mit bauplänen für objecte. 
 
 mehtode
      das verhalten oder die dinge die eine classe tuhen sollte. (wenn bug frei)
@@ -109,3 +114,5 @@ mehtode
      neu tippen oder copieren und einfügen) beispiel: void sagHallo (){...}  am
      besten eine neue zeile nehmen und einrücken für das was die methode machen
      soll. 
+     
+methoden werden aufgerufen in dem man den "object name.methoden name" schreibt. wobei es null sinn macht alle objecte "object1 object2" zu nennen. mann sollte schon später noch wissen was die objecte sind. das selbe gild für die methoden. z.b.  alex.sagHallo();
