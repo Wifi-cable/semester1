@@ -10,13 +10,16 @@ Java notizen
 
 -java archiver  baut java archive.
 
--classpath führt zu den .class datein. zb main-methode (speichert classen, oder kategorien und deren bezeichnungen) ( .class-claspath bin;C:\lib)
+-classpath führt zu den .class datein. zb main-methode (speichert classen, oder kategorien und deren bezeichnungen) die sind aber nur was für den compiler
+nicht für den user.( .class-claspath bin;C:\lib)
 
 -compiler baut aus java source code class dateien die dann in bite code sind? und geziped also kompremiert(jarvac -d bin beispiel.java)
 
 - interpreter macht die class dateien ausfürbar. 
 
 -leider unterscheide Java in gross und klein schreibung. ich mache das ja ungerne.
+
+-schlüsselworte werden immer zusammen geschrieben zb "sagHallo" ohne bindestriche und ohne leehrzeichen.
 
 // dieser text dient kommentaren er wird nicht im programm bearbeitet. nur im quellcode angezeigt. das ist gut um code zu kommentieren;
 
@@ -29,6 +32,11 @@ System.out.println("hallo");  ist java code der "hallo" anzeigt. das System.out.
 das  ln steht für "line" oder zeile. 
 
 System.out.print("____"); geht auch. es hatt dann keinen zeilen umbruch 
+
+{} schiesst einen "block" ein. also eine argumentationskette, oder mehrere zusammengefasste anweisungen.
+
+    einrücken hilft der leesbarkeit, aber es hat keine bedeutung für den
+    computer. dem ist es egal,  den proffesoren warscheinlich nicht-
 
 arags[0] erster eingabewert. (etwas das man als imput eingeben kann und mit dem java dann arbeitet) es wird bei 0 angefangen zu zälen. ist komisch, machen andere programiersprachen aber auch so. 
 
@@ -50,8 +58,9 @@ hier gibt es die variable "satz" die oben als strung deffiniert wurde.  das istg
 
 -strings
        können auch verknüpft werden mit einem +.  also z.b.
-       ("string1"+"string2");  wichtig an die leerzeichen denken. sontzt hat
-       man ein mega bandwurm-wort.
+       ("string1"+"string2"); das ist gut weil es sontzt einen error gibt wenn
+       ein text länger als eine zeile sein soll. wichtig an die leerzeichen
+       denken. sontzt hat man ein mega bandwurm-wort.
 
 variablen typen
     -boolean (bolean hungrig  also true/false)
@@ -68,6 +77,8 @@ variablen typen
 }
 
 wichtig, String und System out gross schreiben. beides zwischen die geschwungenen klammern. befor die varable fest gelegt wird java sagen was für ein varibablen typ. in dem fall String.
+
+wen eine variable in eine string eingefügt werden soll muss das so aussehen ("string" +varable+ "string"); das letzte pluss ist wichig.
     
 bei zahlen die man dividieren will ist es wichtig eine null dahinter zu stellen. also statt 2 eine 2.0 und das als double zu deklarieren.
 
@@ -101,6 +112,7 @@ object
     schnipsel namens methode benutzen wenn es in der selben class ist)
 
 class.
+     sind seperate java files! 
      etwas das dinge im code zusammenfasst das in der realen welt zusammen
      gehört. sie können frei deffiniert werden wie in CSS. zb "papagei" oder
      "menue leiste". eine class kann viele "objects" endhalten wie eine
@@ -116,3 +128,5 @@ mehtode
      soll. 
      
 methoden werden aufgerufen in dem man den "object name.methoden name" schreibt. wobei es null sinn macht alle objecte "object1 object2" zu nennen. mann sollte schon später noch wissen was die objecte sind. das selbe gild für die methoden. z.b.  alex.sagHallo();
+
+die reihnefolge und der ort der dekleration von variablen in einer klasse, spielt in java keine rolle.
