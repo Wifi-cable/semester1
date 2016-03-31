@@ -2,31 +2,23 @@ woche1 kapitel3 aufgabe3
 In dieser Übung wird vieles aus diesem und dem vorherigen Video wiederholt. Dazu gehört das Anlegen von Variablen und Methoden, sowie das Verknüpfen von Zahlenwerten mit Zeichenketten. Ergänze die Klasse Papagei in der Datei Papagei.java. Implementiere in der Klasse Papagei die Methode sagAlter(). Die Methode soll ausgeben: “Hallo, ich bin 5 Jahre alt.” Die Zahl 5 soll jedoch vorher in dieser Methode als Variable mit der Bezeichnung alter gespeichert werden. Erzeuge anschließend in der Klasse Zoo in der Methode main ein Objekt der Klasse Ente mit dem Name dagobert und ein Objekt der Klasse Papagei mit dem Namen alex. Rufe nun zuerst auf dem Objekt dagobert die Methode sagHallo und auf dem Objekt alex die Methode sagAlter auf.
 
 public class Papagei{
-    
-        sagAlter();{
-        int alter= 5;
-        }
-        {
-        void System.out.print("Hallo, ich bin ");
+    int alter= 5;
+
+    void sagAlter() {
+        System.out.print("Hallo, ich bin ");
         System.out.print (alter);
         System.out.print (" jahre alt");
-        }
     }
 }    
 
 
- public class Zoo {
+public class Zoo {
 
      public static void main(String[] args) {
-
--            
-
-+        Papagei alex = new Papagei();
+         Papagei alex = new Papagei();
          Ente dagobert =new Ente();
-     }
-     { 
-         dagobert.sagHallo();
-         alex.sagAltee();
-     }    
 
+         dagobert.sagHallo();
+         alex.sagAlter();
+     }
  }
