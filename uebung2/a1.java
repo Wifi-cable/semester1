@@ -6,7 +6,8 @@ public class a1 {
 	Scanner bin = new Scanner(System.in);	 // new scanner
 	System.out.println("Bitte eine ganze Zahl eingeben um sie in Binaer umgewandelt zu bekommen"); //input
 	int zahl = bin.nextInt(); //uses the input, assigns varable
-	System.out.println("das Ergebnis ist "+berechneBin(zahl));
+	System.out.println("das Ergebnis ist binaer "+berechneBin(zahl));
+	System.out.println("der Gray code ist "+berechneGray(zahl));
 	}
 	// how to make it recursive, assingning the zahl variable again and again till a zero is reached
 	static String berechneBin(int dez){
@@ -17,4 +18,7 @@ public class a1 {
         }
         return result;
 	}
+    static String berechneGray(int dez){
+        return berechneBin(dez ^ dez>>>1);
+    }
 }
