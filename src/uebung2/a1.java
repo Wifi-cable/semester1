@@ -10,13 +10,16 @@ public class a1 {
 	System.out.println("der Gray code ist "+berechneGray(zahl));
 	}
 	// how to make it recursive, assingning the zahl variable again and again till a zero is reached
-	static String berechneBin(int dez){
+	static String dec2bin(int dez){
 		String result= new String("");
         if (dez != 0)
         {
-            result= berechneBin(dez>>>1)+(dez&1); 
+            result= dec2bin(dez>>>1)+(dez&1); 
         }
         return result;
+	}
+	static String berechneBin(int dez){
+	    return dez==0? "0" : dec2bin(dez);
 	}
     static String berechneGray(int dez){
         return berechneBin(dez ^ dez>>>1);
