@@ -1,4 +1,4 @@
-//package uebung2;
+package uebung2;
 import java.util.Scanner; // makes scanner useable in this class
 public class a1 {
 
