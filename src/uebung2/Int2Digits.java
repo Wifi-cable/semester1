@@ -39,11 +39,9 @@ public class Int2Digits
     {
         int digit= digitArray.length;
         int[] grayArray= new int[digit];
-        int shift= 0;
-        while (digit-- > 0)
+        for (int shift= 0; digit-- > 0; shift+= base-grayArray[digit])
         {
             grayArray[digit]= (digitArray[digit] + shift) % base;
-            shift+= base-grayArray[digit];
         }
         return grayArray;
     }
