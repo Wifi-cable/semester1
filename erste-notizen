@@ -110,6 +110,8 @@ object
     papagei zu bekommen schreibt man ohne anfürhugsteichen "papagei alex
     = new Papagei();" objecte können mehtoden aufrufen, oder verhalten (code
     schnipsel namens methode benutzen wenn es in der selben class ist)
+    
+    sie werden klein geschrieben
 
 class.
      sind seperate java files! 
@@ -117,6 +119,29 @@ class.
      gehört. sie können frei deffiniert werden wie in CSS. zb "papagei" oder
      "menue leiste". eine class kann viele "objects" endhalten wie eine
      art container, oder eine box mit bauplänen für objecte. 
+     
+     -classen und objecte dürfen NICHT den selben namen wie das package haben.
+     keine sonderzeichen in den namen und keine lerzeichen. cammelCase geht.sie
+     dürfen auch nicht wie eine java schlüsselwort heissen. zb nicht String.
+     sie müssen immer gross geschrieben werden und sollten die funktion
+     beschreiben. zb OkButton für den knopf(button) auf dem ok steht, und seine
+     funktionen wenn man ein programm schreibt das am ende eine
+     benutzeroberfläche haben soll. 
+     
+     public oder öffendliche klassen müssen den selben namen haben wie die java
+     datei. zb "public class Klasse1" muss in einer java datei stehen die
+     Klasse1.java steht. 
+     bei einer klasse vor der nicht public steht ist das egal.
+     es können verschiedene klassen in der selben java datei sein, aber die
+     müssen dann natürlich anders heissen und dürfen nicht public sein.
+     für jede klasse eine neue datei zu nehen ist aber sauberer. (und nicht
+     so bugg anfällig, oder so schwer zu lesen)
+     
+main 
+    die main methode wird als erstes aufgerufen. wenn es meherer main methoden 
+    in dem selben ordern oder packeage existieren gibt das probleme. sauberer ist
+     es wenn nicht nur seperate klassen in seperaten files sind sondern die auch
+      keine main methode haben. 
 
 mehtode
      das verhalten oder die dinge die eine classe tuhen sollte. (wenn bug frei)
@@ -126,7 +151,25 @@ mehtode
      neu tippen oder copieren und einfügen) beispiel: void sagHallo (){...}  am
      besten eine neue zeile nehmen und einrücken für das was die methode machen
      soll. 
+     auch anfangs klein geschriebn
      
-methoden werden aufgerufen in dem man den "object name.methoden name" schreibt. wobei es null sinn macht alle objecte "object1 object2" zu nennen. mann sollte schon später noch wissen was die objecte sind. das selbe gild für die methoden. z.b.  alex.sagHallo();
+methoden werden aufgerufen in dem man den "object name.methoden name" schreibt. wobei es 
+null sinn macht alle objecte "object1 object2" zu nennen. mann sollte schon später noch
+ wissen was die objecte sind. das selbe gild für die methoden. z.b.  alex.sagHallo();
 
-die reihnefolge und der ort der dekleration von variablen in einer klasse, spielt in java keine rolle.
+die reihnefolge und der ort der dekleration von variablen in einer klasse, spielt in java
+ keine rolle. aber sie alle davor zu deffinieren ist schon praktischer weil übersichtlicher
+
+^ EXOR in java funktiniert ansich so wie in der bolerischen schaltalgebra 
+
+% modulo sieht nach ob sich was ohne rest teilen lässt. 
+
+/ teilt  zb 2/3 
+
+array  der syntax ist  z.b.
+    int whateverArray[] 
+    in die eckigen klammern kommt die grösse des arrays. sie können ihre grösse
+    auch anpassen an zb strings so das sie immer passen. [bin.length()];
+    ansich kann man auch  arrays verschachteln
+    
+schleifen    
