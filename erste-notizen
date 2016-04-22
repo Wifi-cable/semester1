@@ -68,7 +68,18 @@ public class kann von anderen methoden aufgerufen werden. wichtig ist das der
     die müssen aber anders heissen, und dürfen (warscheinlich) nicht public
     sein.(schlechter stiel)
     
-static oder auf deutsch statisch
+static oder auf deutsch statisch sind eiegenschafften einer klasse selbst die
+    nicht zu einem spezifischen object gehören. alle instanzen (objecte) der
+    klasse können darauf zugreifen. andere klassen nicht.
+    
+final ist eine variable für die es einen festen wert gibt, der danach nicht
+    wieder verändert wird. das ist ganz praktisch damit sich java einen festen
+    wert "merkt". kann lokal oder global sein (also für vieles gelten)
+    
+    zb static int sinnDesLebens= 42
+    oder
+    static int sinnDesLebens;{
+    sinnDesLebens=43;}
     
 variablen typen
     -boolean (bolean hungrig  also true/false)
