@@ -4,7 +4,7 @@ import java.util.Arrays;
 
 public class Int2Digits
 {
-    static String digits= new String("0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ");   // shared by all objects of class Int2Digits
+    static final String DIGITS= new String("0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ");   // shared by all objects of class Int2Digits
     int base;   // number base to convert to, each object has its own
 
     public Int2Digits(int base)
@@ -51,7 +51,7 @@ public class Int2Digits
     {
         String result= new String("");
         for (int digit= digitArray.length; digit > 0;
-            result+= digits.charAt(digitArray[--digit]));
+            result+= DIGITS.charAt(digitArray[--digit]));
         return result;
     }
 
