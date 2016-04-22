@@ -1,0 +1,18 @@
+.charAt(name der variable); nimmt einen charater eines strings (location 
+    im string spezifiziert und packt in in das davor deffinierte array.
+    int binArray[] = new int [bin.length()];
+    for(int i=0; i<bin.length(); i++){ 
+    binArray [i] =(int)bin.charAt(i)-(int)'0';}
+    
+    [i] ist das array, bin ist die string. die grösse des arrays richtet sich 
+    nach der länge des strings. das i=0; und das i++ bedeutet das es bei der
+    ersten stelle anfängt (was null ist) und immer ein weiteres dazu zählt.
+    
+    würde auch mit 4 gehen 
+    
+    for (int four=0 four<*.length(); four+4)
+    **[four]=(int)*.charAt(four)-(int) '0';}
+    
+    *name des strings in dem die binär zahlen gespeichert sind
+    ** name des arrays in das die binär zahlen gepackt werden sollen, die 
+    im string waren.

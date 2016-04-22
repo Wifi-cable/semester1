@@ -62,6 +62,14 @@ hier gibt es die variable "satz" die oben als strung deffiniert wurde.  das istg
        ein text länger als eine zeile sein soll. wichtig an die leerzeichen
        denken. sontzt hat man ein mega bandwurm-wort.
 
+public class kann von anderen methoden aufgerufen werden. wichtig ist das der
+    name gross geschrieben werden muss. der name muss mit dem name der datei
+    identisch sein. andere classes (klassen) sind in der selben datei möglich
+    die müssen aber anders heissen, und dürfen (warscheinlich) nicht public
+    sein.(schlechter stiel)
+    
+static oder auf deutsch statisch
+    
 variablen typen
     -boolean (bolean hungrig  also true/false)
     -int integer oder ganze zahl (positiv und negativ)
@@ -110,6 +118,12 @@ object
     papagei zu bekommen schreibt man ohne anfürhugsteichen "papagei alex
     = new Papagei();" objecte können mehtoden aufrufen, oder verhalten (code
     schnipsel namens methode benutzen wenn es in der selben class ist)
+    das object von dem man was will, erhält eine anforderung eine bestimmte 
+    methode auszufüren oder den wert einer eigenschaft zu setzen. zb in der
+    Main mthode werden die "fremden" objecte dann gross geschrieben, mit neuem
+    variablen namen versehen und dahinter kommt ein "=new" dahinter dann der
+    name des objectes (wieder gross) gefolgt von einer klammer und einem
+    semicolon. so... (); 
     
     sie werden klein geschrieben
 
@@ -173,3 +187,36 @@ array  der syntax ist  z.b.
     ansich kann man auch  arrays verschachteln
     
 schleifen    
+
+
+return für einen rückgabe wert.
+
+
+recursion wenn eine funktion sich selbst aufruft, oder eine andere aufruft die sich seblst aufruft die variablen 
+    verändern sich dabei meistens ist eine fall unterscheidung dabei. zb if... return.  ist wie ein kreislauf der weiter 
+    läuft bis ein ziehl erreicht ist.  oder wie eine spirale. 
+    
+sort algorythems. davon gibt es so einige. 
+    einer vergleicht die unterste eines stapels mit allen anderen um zu sehen 
+    ob sie die kleinste ist. vertauschen mit der stelle darüber wenn die darüber kleiner ist. (sorting stacks)
+    [5] [4] [leer] fünf ist nicht kleiner als 4
+    [leer] [4] [5] fünf auf den leeren platz
+    [4] [leer] [5] vier auf den jetzt leer gewordennen ersten platz
+    [4] [5]  [leer] fünf auf den mittleren, leer gewordennen platz. 
+    wie das lager von hanoi.
+    
+searc for index position. (binary seach?)  index = (min+max)/2; mitte durchsuchen und nachsehen ob das gesuchte gleich der
+     positionist,  grösser ist oder kleiner. (if abfrage) wenn x grösser 
+     ist dann über der mitte weiter suchen. wenn kleiner dann in der
+     unteren häfte. sontzt ist es schon gefunden. return statement sind
+     wichtig damit es keine endloos schleife wird. auch ein else wenn
+      das gesuchte nicht endhalten ist würde sinn machen.
+      
+      kann rektusiv gelöst werden aber das gibt erstuanlich schnell einen 
+      stack overflow;) min und max sind ausgeschlossen es sei denn man sagt
+      (numberToFind> index-1) bz (NumberTOFind <index +1)
+      
+declaration schreiben von eigenschaften/atributen und methoden in einer klasse
+    nennt man declaration.
+
+    
