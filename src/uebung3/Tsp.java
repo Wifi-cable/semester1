@@ -36,7 +36,7 @@ public class Tsp {
         int[] shortest= route.anneal(0.4, 100.0, 1000, verbosity);
         System.out.println("End result of annealing");
         route.tourPrint();
-        System.out.println("Shortest tour");
+        System.out.println("Kürzeste Tour");
         route.tourPrint(shortest,true);
     }
 
@@ -158,7 +158,7 @@ public class Tsp {
         {
             for (int y= 0; y<cities; y++)
             {
-                System.out.print("d(" + x +","+ y +")=" + getDistance(x,y) + "\t");
+                System.out.printf("d(%d,%d)=%6.4f\t", x, y, getDistance(x,y));
             }
             System.out.print("\n");
         }
@@ -201,7 +201,7 @@ public class Tsp {
         System.out.print(")");
         if (printDist)
         {
-            System.out.print(", Strecke="+ getDistance(tour));
+            System.out.printf(", Strecke=%7.4f", getDistance(tour));
         }
         System.out.print('\n');
     }
