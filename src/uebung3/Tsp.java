@@ -3,6 +3,10 @@
  */
 package uebung3;
 
+import java.io.File;
+import java.io.FileNotFoundException;
+import java.io.IOException;
+import java.io.PrintWriter;
 import java.security.SecureRandom;
 import java.util.Arrays;
 import java.util.Scanner; // makes scanner useable in this class
@@ -12,6 +16,7 @@ import java.util.Scanner; // makes scanner useable in this class
  *
  */
 public class Tsp {
+    static String browser= "firefox";
     SecureRandom random= new SecureRandom();
     private int cities;
     private double distances[][];
@@ -19,16 +24,25 @@ public class Tsp {
 
     /**
      * @param args
+     * @throws IOException 
      */
-    public static void main(String[] args) 
+    public static void main(String[] args) throws IOException 
     {
         Tsp route= new Tsp();
         Scanner bin = new Scanner(System.in);
         System.out.print("Wie viele Städte? ");
         int cities = bin.nextInt(); //uses the input, assigns varable
+        bin.close();
         route.distMatrixInit(cities);
         route.distMatrixFill();
         route.distMatrixPrint();
+        File feile = File.createTempFile("entfernungen", ".txt");
+        route.distMatrixPrint(feile);
+        System.out.println("Entfernungstabelle nach "+ feile.getCanonicalPath() +" exportiert");
+        String[] arguments= new String[] {browser, feile.getCanonicalPath()};
+        Runtime runtime= Runtime.getRuntime();
+        runtime.exec(arguments);
+        System.out.println(browser +" gestartet");
         route.tourInit();
         System.out.print("seeded ");
         route.tourPrint();
@@ -162,6 +176,23 @@ public class Tsp {
             }
             System.out.print("\n");
         }
+    }
+    public void distMatrixPrint(File file) throws FileNotFoundException
+    /*
+     * see http://www.homeandlearn.co.uk/java/write_to_textfile.html
+     */
+    {
+        PrintWriter table= new PrintWriter(file);
+        for (int x= 0; x<cities; x++)
+        {
+            for (int y= 0; y<cities; y++)
+            {
+                table.printf("d(%2d,%2d)=%6.4f\t", x, y, getDistance(x,y));
+            }
+            table.print("\n");
+        }
+        table.flush();
+        table.close();
     }
 
     public int[] tourInit(int length)
