@@ -1,16 +1,16 @@
 package tabellen;
 
-public class Tabelle {
 /**
  * Eine Klasse, die Tabellenausdruck-Methoden beinhaltet
  */
+public class Tabelle {
+    /**
+     * Methode, um Funktionen auszudrucken
+     * 
+     * Bisher kein Parameter, deshalb funktioniert diese Methode bisher nicht
+     */
     public void print()
     {
-        /**
-         * Methode, um Funktionen auszudrucken
-         * 
-         * Bisher kein Parameter, deshalb funktioniert diese Methode bisher nicht
-         */
         for (int t=0;t<9;t++)
         {
             System.out.print(board[t] + "|"); 
