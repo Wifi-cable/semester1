@@ -68,9 +68,14 @@ public class kann von anderen methoden aufgerufen werden. wichtig ist das der
     die müssen aber anders heissen, und dürfen (warscheinlich) nicht public
     sein.(schlechter stiel)
     
-static oder auf deutsch statisch sind eiegenschafften einer klasse selbst die
+static oder auf deutsch statisch sind eigenschafften einer klasse selbst die
     nicht zu einem spezifischen object gehören. alle instanzen (objecte) der
-    klasse können darauf zugreifen. andere klassen nicht.
+    klasse können darauf zugreifen. andere klassen nicht. sie müssen dann nicht
+    mehr in jeder instanz der klasse neu definiert werden. kann ganz praktisch sein
+    für variablen die oft gebraucht werden. 
+    
+    können auch methoden sein.
+    
     
 final ist eine variable für die es einen festen wert gibt, der danach nicht
     wieder verändert wird. das ist ganz praktisch damit sich java einen festen
@@ -105,6 +110,18 @@ int x *=3; bedeutet die zahl die in variable x gespeichert ist mal drei
 
 int y++; bedeutet die zahl in variable y plus 1. gut zum hochzälen.
 
+ es ist möglich mehere variablen mit dem selben datentyp zu versehen in einer
+    zeile. zb.
+    int gehalt, lohn, provision;
+    danach dann die werte zuweisen.
+    gehalt=2000
+    lohn=1800
+    provision=200 
+    
+   gehalt= lohn+provision;
+   System.out.println("Gehalt ist " +gehalt)   oder alternativ
+   System.out.Println("Gehalt ist "+(lohn+provision) )
+
 short
         ist änlich wie integer (int) bedeutet 16 bit zahlen hexadecimal um das
         dazustellen muss eine 0x vor die zahl gestellt werden.(für oct muss
@@ -122,8 +139,17 @@ float
     ist auch ein daten typ für zahlen. nur 4 bit, also nicht so genau wie
     double, muss als socher deklariert werden und braucht ein F dahinter. zb  
     float a = 1.00f; 
+    
+umwandlung von datentypen. java mixt ungerne daten typen. leider.
+    int ganz = 3; 
+    float komma2 = (float) ganz; wandelt das integer ganz in ein float um. 
+     
+    geht leider nicht mit strings. die sind zusammengesetzte chars und werden
+     wie ein object behandelt. (gross geschrieben und so.) 
 
 object
+    rufen methoden auf. 
+    
     sind in classes drinn. mehere objecte können in der selben class sein. zb
     der papagei "alex" ist ein object der klasse papagei. um einen zweiten
     papagei zu bekommen schreibt man ohne anfürhugsteichen "papagei alex
@@ -153,6 +179,8 @@ class.
      funktionen wenn man ein programm schreibt das am ende eine
      benutzeroberfläche haben soll. 
      
+     werden immer gross geschrieben.
+     
      public oder öffendliche klassen müssen den selben namen haben wie die java
      datei. zb "public class Klasse1" muss in einer java datei stehen die
      Klasse1.java steht. 
@@ -162,6 +190,8 @@ class.
      für jede klasse eine neue datei zu nehen ist aber sauberer. (und nicht
      so bugg anfällig, oder so schwer zu lesen)
      
+     void für klassen ohne rückgabewert? aber was heist das?
+     
 main 
     die main methode wird als erstes aufgerufen. wenn es meherer main methoden 
     in dem selben ordern oder packeage existieren gibt das probleme. sauberer ist
@@ -170,13 +200,24 @@ main
 
 mehtode
      das verhalten oder die dinge die eine classe tuhen sollte. (wenn bug frei)
-     zb das "sagt hallo" in der class "papagei" ist eine methode. void steht
-     davor, dann wie die methode heist. verschiedene programm teile können auf
+     
+     sind program bausteine die eine gewisse teil aufgabe lösen.
+     
+     am besten mit einem verb drin zb getState, oder calculateRoute 
+     
+     spollten klein geschrieben werden.(anfangsbuchstabe klein)
+     
+     zb das "sagt hallo" in der class "papagei" ist eine methode. void (kann davor stehen
+     davor, dann wie die methode heist, static aber auch). verschiedene programm teile können auf
      die vorher deffienierten methoden zugreifen. (man muss sie nicht dauernt
      neu tippen oder copieren und einfügen) beispiel: void sagHallo (){...}  am
      besten eine neue zeile nehmen und einrücken für das was die methode machen
      soll. 
-     auch anfangs klein geschriebn
+     
+     variablen (die für die klasse alleine gelten) für eine methode werden im 
+     rumf der methode {zwischen den klammern}deklariert. da kommen auch die
+      eigentlichen anweisungen hin. 
+     
      
 methoden werden aufgerufen in dem man den "object name.methoden name" schreibt. wobei es 
 null sinn macht alle objecte "object1 object2" zu nennen. mann sollte schon später noch
@@ -230,4 +271,4 @@ searc for index position. (binary seach?)  index = (min+max)/2; mitte durchsuche
 declaration schreiben von eigenschaften/atributen und methoden in einer klasse
     nennt man declaration.
 
-    
+    105 punkte
